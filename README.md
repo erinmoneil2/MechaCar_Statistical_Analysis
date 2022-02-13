@@ -1,18 +1,26 @@
 # MechaCar_Statistical_Analysis
+In this project, we are reviewing production data for AutosRUs' newest prototype, the MechaCar, to help determine where there production is suffereing. In this analysis we will do the following: 
+- Perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes. 
+- Collect summary statistics on the pounds per square inch(PSI) of the suspension coils from the manufacturing lots. 
+- Run t-tests tod etermine if the manfacturing lots are statistically different from the mean population. 
+- Design a statistical study to compare vehcile performance of the MechaCar vehicles against vehicles from other manufacturers. 
 
 ## Linear Regression to Predict MPG 
-- Write a short summary using screenshots of the output from the linear regression, and address the following questions: 
-- 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset? 
-- 2. Is the slope of the linear model considered to be zero? Why or why not? 
-- 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? 
 
-Linear Regression Model on all Six Variables:
+### Linear Regression Model on all Six Variables:
 
 ![Screen Shot 2022-02-06 at 3 37 20 PM](https://user-images.githubusercontent.com/92831268/152715014-5b4b0fde-7ef8-41ee-8811-04680fa155a1.png)
 
-Statistical Summary of the linear regression model with the intended p-values:
+### Statistical Summary of the linear regression model with the intended p-values:
 
 ![Screen Shot 2022-02-06 at 3 38 10 PM](https://user-images.githubusercontent.com/92831268/152715081-e800858a-cc24-405f-8b23-4843f4ff6199.png)
+
+From the above linear regression model and statistical summary, we can infer the following: 
+1. The vehicle length and vehivle ground clearance, as well as the intercept, are statistically likely to provide non-random amounts of variance to the prototype. These variables will be likely to have a significant impact on the mpg of the MechaCar prototype. 
+
+2. The slope of this linear model is not considered to be zero because the p-value for this model is 5.35e-11, which is smaller than the assumed significance level of 0.05% and provides sufficient evidence to reject our hull hypothesis. 
+
+3. This mutiple regression model does predict mpg of MechaCar prototypes effectviely, relatively speaking. The r-squared value is 0.7149 which menas roughly 71% of all mpg predictions will be determined by this model. 
 
 ## Summary Statistics on Suspension Coils 
 - Write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question: 
